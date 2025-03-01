@@ -1,0 +1,6 @@
+#!/bin/bash
+
+make clean
+make
+qemu-system-i386 -monitor stdio -kernel bin/kernel.bin -s -S &
+ddd
